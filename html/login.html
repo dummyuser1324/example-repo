@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <script defer src="/js/login-page.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <img src="/pictures/asu-logo-horizontal.png" id="asu-logo" alt="ASU Sparky" height="48px" />
+    <h1 id="header">Login</h1>
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <p id="new-div-content">Drag the images to form WASD.</p>
+      <table>
+        <tr>
+          <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+          <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+          <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+          <td>
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+          </td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td>
+            <div id="div1">
+              <img src="/pictures/down.jpg" draggable="true" ondragstart="drag(event)" class="captcha-img" id="s">
+            </div>
+          </td>
+          <td>
+            <div id="div1">
+              <img src="/pictures/right.jpg" draggable="true" ondragstart="drag(event)" class="captcha-img" id="d">
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id="div1">
+              <img src="/pictures/left.jpg" draggable="true" ondragstart="drag(event)" class="captcha-img" id="a">
+            </div>
+          </td>
+          <td>
+            <div id="div1">
+              <img src="/pictures/up.jpg" draggable="true" ondragstart="drag(event)" class="captcha-img" id="w">
+            </div>
+          </td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+    <h3 id="header">New User? <a id="anchor-link" href="/html/signup.html">Register!</a></h3>
+    <img src="/pictures/asu_sparky.png" id="asu-sparky" alt="ASU Sparky" width="200px" />
+  </div>
+</body>
+
+</html>

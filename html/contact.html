@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Contact Us</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<script defer src="/js/login-page.js"></script>
+</head>
+
+<body>
+	<div class="navbar">
+        <a href="/html/home.html">Home</a>
+        <a href="/html/soon.html">About</a>
+        <a href="/html/soon.html">Blogs</a>
+        <div class="subnav">
+            <button class="subnavbtn">Discuss<i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="/html/soon.html">Counter-Strike: Global Offensive</a>
+                <a href="/html/soon.html">DOTA 2</a>
+                <a href="/html/soon.html">Fall Guys</a>
+                <a href="/html/soon.html">Valorant</a>
+            </div>
+        </div>
+        <a href="#contact">Profile</a>
+        <a href="/html/contact.html">Contact</a>
+        <a href="/html/login.html" id="log-out">Log Out</a>
+    </div>
+	<div class="main" id="old-div">
+		<form id="register-form">
+			<table>
+				<tr>
+					<td id="cell">
+						<h1 id="header">Contact Us</h1>
+					</td>
+				</tr>
+				<tr>
+					<td id="cell"><input type="text" name="fullname" id="name-field" class="login-form-field"
+							placeholder="Full Name" required></td>
+				</tr>
+				<tr>
+					<td id="cell"><input type="tel" name="phone" id="phone-field" class="login-form-field"
+							placeholder="Phone" maxlength="10"></td>
+				</tr>
+				<tr>
+					<td id="cell"><input type="email" name="email" id="email-field" class="login-form-field"
+							placeholder="abc@xyz.com"></td>
+				</tr>
+				<tr>
+					<td id="cell"><textarea rows="8" cols="40" name="Message" id="message-field"
+							class="message-form-field" placeholder="Your message here..." required></textarea></td>
+				</tr>
+				<tr>
+					<td id="cell"><input type="submit" value="Submit" id="login-form-submit"></td>
+				</tr>
+				<tr>
+					<td id="cell">
+						<div id="location-div">
+							<p id="location"></p>
+							<button type="button" id="location-submit" onclick="showPosition()">Show my
+								location</button>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<div class="main" id="new-div">
+		<p id="new-div-content"></p>
+	</div>
+</body>
+
+</html>
